@@ -1,0 +1,477 @@
+from Tkinter import *
+import time
+import sqlite3 as lite
+from math import *
+root=Tk()
+asd1=[]
+asd2=[]
+asd3=[]
+asd4=[]
+asd5=[]
+asd6=[]
+a1=[]
+a2=[]
+a3=[]
+a4=[]
+a5=[]
+a6=[]
+a=[]
+abc=[]
+efg=[]
+b=[]
+flag=0
+l=0
+def chat29():
+    print'flag is',flag
+    print'l is',l
+    if((flag-1)==l or flag==l):
+        print('user granted')
+    else:
+        print('access denied')
+def chat28():
+    if(asd1==a1):
+        flag=1
+        if(asd1[3]>=abc[0] or asd1[3]<=efg[0]):
+            l=l+1
+    if(asd1==a2):
+        flag=1
+        if(asd1[3]>=abc[1] or asd1[3]<=efg[1]):
+            l=l+1        
+    if(asd1==a3):
+        flag=1
+        if(asd1[3]>=abc[2] or asd1[3]<=efg[2]):
+            l=l+1
+    if(asd1==a4):
+        flag=1
+        if(asd1[3]>=abc[3] or asd1[3]<=efg[3]):
+            l=l+1
+    if(asd1==a5):
+        flag=1
+        if(asd1[3]>=abc[4] or asd1[3]<=efg[4]):
+            l=l+1
+    if(asd2==a1):
+        flag=2
+        if(asd2[3]>=abc[0] or asd2[3]<=efg[0]):
+            l=l+1
+    if(asd2==a2):
+        flag=2
+        if(asd1[3]>=abc[1] or asd2[3]<=efg[1]):
+            l=l+1        
+    if(asd2==a3):
+        flag=2
+        if(asd2[3]>=abc[2] or asd2[3]<=efg[2]):
+            l=l+1
+    if(asd2==a4):
+        flag=2
+        if(asd1[3]>=abc[3] or asd2[3]<=efg[3]):
+            l=l+1
+    if(asd2==a5):
+        flag=2
+        if(asd1[3]>=abc[4] or asd2[3]<=efg[4]):
+            l=l+1
+    if(asd3==a1):
+        flag=3
+        if(asd3[3]>=abc[0] or asd3[3]<=efg[0]):
+            l=l+1
+    if(asd3==a2):
+        flag=3
+        if(asd3[3]>=abc[1] or asd3[3]<=efg[1]):
+            l=l+1        
+    if(asd3==a3):
+        flag=3
+        if(asd1[3]>=abc[2] or asd3[3]<=efg[2]):
+            l=l+1
+    if(asd3==a4):
+        flag=3
+        if(asd1[3]>=abc[3] or asd1[3]<=efg[3]):
+            l=l+1
+    if(asd3==a5):
+        flag=3
+        if(asd3[3]>=abc[4] or asd3[3]<=efg[4]):
+            l=l+1
+    if(asd4==a1):
+        flag=4
+        if(asd4[3]>=abc[0] or asd4[3]<=efg[0]):
+            l=l+1
+    if(asd4==a2):
+        flag=4
+        if(asd4[3]>=abc[1] or asd4[3]<=efg[1]):
+            l=l+1        
+    if(asd4==a3):
+        flag=1
+        if(asd4[3]>=abc[2] or asd4[3]<=efg[2]):
+            l=l+1
+    if(asd4==a4):
+        flag=4
+        if(asd4[3]>=abc[3] or asd4[3]<=efg[3]):
+            l=l+1
+    if(asd4==a5):
+        flag=4
+        if(asd4[3]>=abc[4] or asd4[3]<=efg[4]):
+            l=l+1
+    if(asd5==a1):
+        flag=5
+        if(asd5[3]>=abc[0] or asd5[3]<=efg[0]):
+            l=l+1
+    if(asd5==a2):
+        flag=5
+        if(asd5[3]>=abc[1] or asd5[3]<=efg[1]):
+            l=l+1        
+    if(asd5==a3):
+        flag=5
+        if(asd5[3]>=abc[2] or asd5[3]<=efg[2]):
+            l=l+1
+    if(asd5==a4):
+        flag=5
+        if(asd5[3]>=abc[3] or asd5[3]<=efg[3]):
+            l=l+1
+    if(asd5==a5):
+        flag=5
+        if(asd5[3]>=abc[4] or asd5[3]<=efg[4]):
+            l=l+1
+    chat29()
+
+def chat26():
+    i1=i2=i3=0
+    global asd6
+    t2=time.time()
+    t=t2-t1
+    
+    q=str(en.get())
+    w=len(q)
+    if(w==6):
+        for i in range(0,6):
+            if(q[i] in a0):
+                i1=i1+1
+            elif(q[i] in a1):
+                i2=i2+1
+            else:
+                i3=i3+1
+        asd6.append(i1)
+        asd6.append(i2)
+        asd6.append(i3)
+        asd6.append(t)
+    root20.destroy()
+    chat28()
+def chat25():
+    global root20,t1,en
+    t1=0
+    root19.destroy()
+    root20=Tk()
+    t1=time.time()
+    en=Entry(root20)
+    en.grid(row=0,column=0)
+    Button(root20,text='Send',command=chat26).grid(row=1,column=1)
+def chat24():
+    global root19
+##    root8.destroy()
+    time.sleep(6)
+    root19=Tk()
+    Label(root19,text="Which is your favourite season?summer or winter?").grid(row=0,column=0)
+    Button(root19,text="Reply",command=chat25).grid(row=1,column=1)
+def chat23():
+    i1=i2=i3=0
+    global asd5
+    t2=time.time()
+    t=t2-t1
+    
+    q=str(en.get())
+    w=len(q)
+    if(w==6):
+        for i in range(0,6):
+            if(q[i] in a0):
+                i1=i1+1
+            elif(q[i] in a1):
+                i2=i2+1
+            else:
+                i3=i3+1
+        asd5.append(i1)
+        asd5.append(i2)
+        asd5.append(i3)
+        asd5.append(t)
+    root18.destroy()
+    chat24()
+def chat22():
+    global root18,t1,en
+    t1=0
+    root17.destroy()
+    root18=Tk()
+    t1=time.time()
+    en=Entry(root18)
+    en.grid(row=0,column=0)
+    Button(root18,text='Send',command=chat23).grid(row=1,column=1)
+def chat21():
+    global root17
+##    root8.destroy()
+    time.sleep(6)
+    root17=Tk()
+    Label(root17,text="What is your favourite gadget?mobile or tablet?").grid(row=0,column=0)
+    Button(root17,text="Reply",command=chat22).grid(row=1,column=1)
+def chat20():
+    i1=i2=i3=0
+    global asd4
+    t2=time.time()
+    t=t2-t1
+    
+    q=str(en.get())
+    w=len(q)
+    if(w==6):
+        for i in range(0,6):
+            if(q[i] in a0):
+                i1=i1+1
+            elif(q[i] in a1):
+                i2=i2+1
+            else:
+                i3=i3+1
+        asd4.append(i1)
+        asd4.append(i2)
+        asd4.append(i3)
+        asd4.append(t)
+    root16.destroy()
+    chat21()
+def chat19():
+    global root16,t1,en
+    t1=0
+    root15.destroy()
+    root16=Tk()
+    t1=time.time()
+    en=Entry(root16)
+    en.grid(row=0,column=0)
+    Button(root16,text='Send',command=chat20).grid(row=1,column=1)
+def chat18():
+    global root15
+##    root8.destroy()
+    time.sleep(6)
+    root15=Tk()
+    Label(root15,text="Who is favourite singer?madona or shakira?").grid(row=0,column=0)
+    Button(root15,text="Reply",command=chat19).grid(row=1,column=1)
+def chat17():
+    i1=i2=i3=0
+    global asd3
+    t2=time.time()
+    t=t2-t1
+    
+    q=str(en.get())
+    w=len(q)
+    if(w==6):
+        for i in range(0,6):
+            if(q[i] in a0):
+                i1=i1+1
+            elif(q[i] in a1):
+                i2=i2+1
+            else:
+                i3=i3+1
+        asd3.append(i1)
+        asd3.append(i2)
+        asd3.append(i3)
+        asd3.append(t)
+    root14.destroy()
+    chat18()
+def chat16():
+    global root14,t1,en
+    t1=0
+    root13.destroy()
+    root14=Tk()
+    t1=time.time()
+    en=Entry(root14)
+    en.grid(row=0,column=0)
+    Button(root14,text='Send',command=chat17).grid(row=1,column=1)
+def chat15():
+    global root13
+##    root8.destroy()
+    time.sleep(6)
+    root13=Tk()
+    Label(root13,text="Which one do you like?fedora or redhat?").grid(row=0,column=0)
+    Button(root13,text="Reply",command=chat16).grid(row=1,column=1)
+def chat14():
+    i1=i2=i3=0
+    global asd2
+    t2=time.time()
+    t=t2-t1
+    
+    q=str(en.get())
+    w=len(q)
+    if(w==6):
+        for i in range(0,6):
+            if(q[i] in a0):
+                i1=i1+1
+            elif(q[i] in a1):
+                i2=i2+1
+            else:
+                i3=i3+1
+        asd2.append(i1)
+        asd2.append(i2)
+        asd2.append(i3)
+        asd2.append(t)
+    root12.destroy()
+    chat15()
+def chat13():
+    global root12,t1,en
+    t1=0
+    root11.destroy()
+    root12=Tk()
+    t1=time.time()
+    en=Entry(root12)
+    en.grid(row=0,column=0)
+    Button(root12,text='Send',command=chat14).grid(row=1,column=1)
+def chat12():
+    global root11
+##    root8.destroy()
+    time.sleep(6)
+    root11=Tk()
+    Label(root11,text="What is your favourite football club in Barclays Premier Leigue?manutd or mancty?").grid(row=0,column=0)
+    Button(root11,text="Reply",command=chat13).grid(row=1,column=1)
+def chat11():
+    i1=i2=i3=0
+    global asd1
+    t2=time.time()
+    t=t2-t1
+    
+    q=str(en.get())
+    w=len(q)
+    if(w==6):
+        for i in range(0,6):
+            if(q[i] in a0):
+                i1=i1+1
+            elif(q[i] in a1):
+                i2=i2+1
+            else:
+                i3=i3+1
+        asd1.append(i1)
+        asd1.append(i2)
+        asd1.append(i3)
+        asd1.append(t)
+    root10.destroy()
+    chat12()
+def chat10():
+    global root10,t1,en
+    t1=0
+    root9.destroy()
+    root10=Tk()
+    t1=time.time()
+    en=Entry(root10)
+    en.grid(row=0,column=0)
+    Button(root10,text='Send',command=chat11).grid(row=1,column=1)
+def chat9():
+    global root9
+    root8.destroy()
+    time.sleep(6)
+    root9=Tk()
+    Label(root9,text="Who is your favourite cricketer?sachin or sourav").grid(row=0,column=0)
+    Button(root9,text="Reply",command=chat10).grid(row=1,column=1)
+def chat8():
+    global en,root8
+    root7.destroy()
+    root8=Tk()
+    en=Entry(root8)
+    en.grid(row=0,column=0)
+    Button(root8,text='Send',command=chat9).grid(row=1,column=1)
+def chat7():
+    global root7
+    q=str(en.get())
+    w=len(q)
+    root6.destroy()
+    if(q[0]=='y'):
+        time.sleep(5)
+        root7=Tk()
+        Label(root7,text='Okay.I will give u two options.You have to answer any one of them').grid(row=0,column=0)
+    elif(q[0]):
+        time.sleep(6)
+        root7=Tk()
+        Label(root7,text='Why not?Its very interesting.I will give u two options.You have to answer any one of them.Lets play.').grid(row=0,column=0)
+    Button(root7,text='Reply',command=chat8).grid(row=1,column=1)  ###
+def chat6():
+    global en,root6
+    root5.destroy()
+    root6=Tk()
+    en=Entry(root6)
+    en.grid(row=0,column=1)
+    Button(root6,text='Send',command=chat7).grid(row=1,column=1)
+def chat5():
+    global root5
+    q=str(en.get())
+    w=len(q)
+    root4.destroy()
+    if(q[w-1]=='?'):
+        time.sleep(7)
+        root5=Tk()
+        Label(root5,text='I am Harold.I works at intel corporation.How are you doing?').grid(row=0,column=0)
+    else:
+        time.sleep(4)
+        root5=Tk()
+        Label(root5,text='Hey if you have some free time then we can play a game.Do you want to play?').grid(row=0,column=0)
+    Button(root5,text='Reply',command=chat6).grid(row=1,column=1)
+def chat4():
+    global en,root4
+    root3.destroy()
+    root4=Tk()
+    en=Entry(root4)
+    en.grid(row=0,column=1)
+    Button(root4,text='Send',command=chat5).grid(row=1,column=1)
+def chat3():
+    global root3
+    q=str(en.get())
+    w=len(q)
+    root2.destroy()
+    time.sleep(3)
+    root3=Tk()
+##    Label(root3,text="seen").grid(row=0,column=0)
+##    time.sleep(3)
+##    Label(root3,text="typing...").grid(row=0,column=0)
+##    time.sleep(3)
+    if(q[w-1]=='?'):
+        Label(root3,text='I am Harold.I works at intel corporation.How are you doing?')
+    else:
+        Label(root3,text='how are you doing?').grid(row=0,column=0)
+    Button(root3,text='Reply',command=chat4).grid(row=1,column=1)
+def chat2():
+    global root2,en
+    root2=Tk()
+    root1.destroy()
+    en=Entry(root2)
+    en.grid(row=0,column=0)
+    Button(root2,text="SEND",command=chat3).grid(row=1,column=0)
+def chat1():
+    global root1
+    root1=Tk()
+    root.destroy()
+    Label(root1,text="hi").grid(row=0,column=0)
+    Button(root1,text="Reply",command=chat2).grid(row=1,column=1)
+Label(root,text='Hello Guest').grid(row=1,column=1)
+Button(root,text='Start chat',command=chat1).grid(row=2,column=1)
+c=lite.connect("project1.db")
+cur=c.cursor()
+res=cur.execute("select * from pro_crypto")
+a0=['a','q','w','s','d','z','x','c','e']
+a1=['r','t','y','f','g','h','v','b','n']
+a2=['u','i','o','p','j','k','l','m']
+for i in res:
+    print i
+    for j in range(0,3):
+        a.append(eval(str(i[j])))
+    print a
+    b.append(eval(str(i[3])))
+    print b
+for i in range(0,5):
+    abc.append(floor(b[i]))
+    efg.append(ceil(b[i]))
+def chat27():
+    if(len(a)!=0):
+        for i in range(0,3):
+            a1.append(a.pop(0))
+    if(len(a)!=0):
+        for i in range(0,3):
+            a2.append(a.pop(0))
+    if(len(a)!=0):
+        for i in range(0,3):
+            a3.append(a.pop(0))
+    if(len(a)!=0):
+        for i in range(0,3):
+            a4.append(a.pop(0))
+    if(len(a)!=0):
+        for i in range(0,3):
+            a5.append(a.pop(0))
+    if(len(a)!=0):
+        for i in range(0,3):
+            a6.append(a.pop(0))
+root.mainloop()
